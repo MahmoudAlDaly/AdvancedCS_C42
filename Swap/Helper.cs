@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Swap
 {
-	internal class Helper
+	internal class Helper     // Helper<T> // T on class level
 	{
 		#region Non Generic Swap
 
@@ -20,8 +20,18 @@ namespace Swap
 
 		#endregion
 
+		// T Method Level
+		public static void Swap<T>(ref T x, ref T y)  // T on method level
+		{
+			T Temp = x;
+			x = y;
+			y = Temp;
+
+		}
 
 
+
+		#region Overloadin Swap
 
 		//public static void Swap(ref double x, ref double y)
 		//{
@@ -39,5 +49,8 @@ namespace Swap
 		//	y = Temp;
 
 		//}
+
+		#endregion
+
 	}
 }
