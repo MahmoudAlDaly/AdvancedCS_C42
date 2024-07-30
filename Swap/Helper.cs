@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Swap
 {
-	internal class Helper     // Helper<T> // T on class level
+	public class Helper<T>     // Helper<T> // T on class level
 	{
 		#region Non Generic Swap
 
@@ -21,7 +21,7 @@ namespace Swap
 		#endregion
 
 		// T Method Level
-		public static void Swap<T>(ref T x, ref T y)  // T on method level
+		public static void Swap(ref T x, ref T y)  // T on method level
 		{
 			T Temp = x;
 			x = y;
@@ -29,6 +29,22 @@ namespace Swap
 
 		}
 
+		public static int SearchArray(T[] arr,T value)
+		{
+			if (arr != null)
+			{
+				for (int i = 0; i < arr.Length; i++)
+				{
+					if (arr[i].Equals(value))
+					{
+						return i;
+					}
+				}
+			}
+			return -1;
+		}
+
+		
 
 
 		#region Overloadin Swap
