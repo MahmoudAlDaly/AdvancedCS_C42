@@ -7,8 +7,8 @@
 
 
 			#region Class
-			Employee e1 = new Employee(1, "ali", 10000);
-			Employee e2 = new Employee(1, "ali", 10000);
+			EmployeeClass e1 = new EmployeeClass(1, "ali", 10000);
+			EmployeeClass e2 = new EmployeeClass(1, "ali", 10000);
 
 			Console.WriteLine($" e1 hashcode = {e1.GetHashCode()}");
 			Console.WriteLine(e1);

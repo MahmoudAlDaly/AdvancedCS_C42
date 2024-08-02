@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace EqualityAndHashcode
 {
-	internal class Employee
+	public class EmployeeClass : IComparable
 	{
 		public int ID { get; set; }
 		public string Name { get; set; }
 		public double Salary { get; set; }
 
 
-		public Employee(int id, string name, double salary)
+		public EmployeeClass(int id, string name, double salary)
 		{
 			ID = id;
 			Name = name;
@@ -25,7 +25,7 @@ namespace EqualityAndHashcode
 		{
 			//Employee employee = (Employee)obj;
 
-			Employee? employee = obj as Employee;
+			EmployeeClass? employee = obj as EmployeeClass;
 			if (employee is null)
 			{
 				return false;
@@ -43,6 +43,14 @@ namespace EqualityAndHashcode
 		public override string ToString()
 		{
 			return $" {ID} - {Name} - {Salary}";
+		}
+
+		public int CompareTo(object? obj)
+		{
+			EmployeeClass? employee = obj as EmployeeClass;
+
+			return - Salary.CompareTo(employee?.Salary);
+			
 		}
 	}
 }
