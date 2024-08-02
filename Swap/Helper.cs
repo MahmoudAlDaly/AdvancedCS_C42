@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Swap
 {
-	public class Helper<T> where T : IComparable     // Helper<T> // T on class level
+	public class Helper<T> where T : IComparable<T>     // Helper<T> // T on class level
 	{
 		#region Non Generic Swap
 
