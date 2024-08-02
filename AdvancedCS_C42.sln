@@ -5,9 +5,11 @@ VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Swap", "Swap\Swap.csproj", "{7533C5C6-2264-4685-A672-B99A887E8DE1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchExample", "SearchExample\SearchExample.csproj", "{CFAD3242-BC02-48BC-8CA8-2D5E49FF4AAD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SearchExample", "SearchExample\SearchExample.csproj", "{CFAD3242-BC02-48BC-8CA8-2D5E49FF4AAD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NonGenericCollections", "NonGenericCollections\NonGenericCollections.csproj", "{6C3993B5-25D7-4072-A467-AD45EB5E2D42}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NonGenericCollections", "NonGenericCollections\NonGenericCollections.csproj", "{6C3993B5-25D7-4072-A467-AD45EB5E2D42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EqualityAndHashcode", "EqualityAndHashcode\EqualityAndHashcode.csproj", "{BC65E54C-B483-4121-AB1F-2360FE8D6BC2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{6C3993B5-25D7-4072-A467-AD45EB5E2D42}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C3993B5-25D7-4072-A467-AD45EB5E2D42}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C3993B5-25D7-4072-A467-AD45EB5E2D42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC65E54C-B483-4121-AB1F-2360FE8D6BC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC65E54C-B483-4121-AB1F-2360FE8D6BC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC65E54C-B483-4121-AB1F-2360FE8D6BC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC65E54C-B483-4121-AB1F-2360FE8D6BC2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

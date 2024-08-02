@@ -24,13 +24,13 @@ namespace Swap
 			return $"id = {ID} , name = {Name} , salary = {Salary}";
 		}
 
-		public static bool operator ==(Employee left, Employee right)
+		public static bool operator == (Employee left, Employee right)
 		{
 			return left.Equals(right);
 			//return (left.ID == right.ID) && (left.Name == right.Name) && (left.Salary == right.Salary);
 		}
 
-		public static bool operator !=(Employee left, Employee right)
+		public static bool operator != (Employee left, Employee right)
 		{
 			return !left.Equals(right);
 			//return (left.ID != right.ID || left.Name != right.Name || left.Salary != right.Salary);
