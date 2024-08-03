@@ -6,8 +6,29 @@ using System.Threading.Tasks;
 
 namespace Swap
 {
-	public class Helper<T> where T : IComparable<T>     // Helper<T> // T on class level
+	public static class Helper<T> where T : class ,IComparable<T>     // Helper<T> // T on class level
 	{
+		#region Generaic constraint
+
+		/// primary constraint [0 || 1]
+		///		1. general primary constraint
+		///			- class     => T must be class
+		///			- struct    => T must be struct
+		///			- notnull   => T must be class or struct not nullable
+		///			- default   =>
+		///			- unmanaged => 
+		///		2. special primary constraint [user defined class and not sealed] <summary>
+		///			- like point class => T must be point or another class inherits from point
+		///			- Enum => T must be Enum
+
+		/// secondary constraint [interface constrain] (0 to M)
+		///		- Icomparable => T must be class or struct implementing IComparable<T> 
+
+		/// parameterless constructor constraint [0 || 1]
+		///		- can't use new() (constructor constraint) with struct 
+		///		
+		#endregion
+
 		#region Non Generic Swap
 
 		//public static void Swap(ref object x, ref object y)
