@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EqualityAndHashcode", "Equa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Generics-BubbleSortExmaple", "Generics-BubbleSortExmaple\Generics-BubbleSortExmaple.csproj", "{E88497D3-B1F4-4365-B602-72477325C7B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IComparableVsGenericIComparable", "IComparableVsGenericIComparable\IComparableVsGenericIComparable.csproj", "{BE28DC95-62C8-4BE7-AA31-21017AD5B415}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IComparableVsGenericIComparable", "IComparableVsGenericIComparable\IComparableVsGenericIComparable.csproj", "{BE28DC95-62C8-4BE7-AA31-21017AD5B415}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericCollectionsList", "GenericCollectionsList\GenericCollectionsList.csproj", "{C4AE30DB-FE46-4258-85AC-6C0F7B3D2222}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{BE28DC95-62C8-4BE7-AA31-21017AD5B415}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE28DC95-62C8-4BE7-AA31-21017AD5B415}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE28DC95-62C8-4BE7-AA31-21017AD5B415}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4AE30DB-FE46-4258-85AC-6C0F7B3D2222}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4AE30DB-FE46-4258-85AC-6C0F7B3D2222}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4AE30DB-FE46-4258-85AC-6C0F7B3D2222}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4AE30DB-FE46-4258-85AC-6C0F7B3D2222}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

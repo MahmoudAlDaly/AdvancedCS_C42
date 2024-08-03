@@ -74,7 +74,7 @@ namespace Swap
 
 			Console.WriteLine("___________________________");
 
-			Helper<double>.Swap(ref d, ref c);   // / where T on Class level need to define <T> before method calling
+			//Helper<double>.Swap(ref d, ref c);   // / where T on Class level need to define <T> before method calling
 			Console.WriteLine($"D = {d}");
 			Console.WriteLine($"C = {c}");
 
